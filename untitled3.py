@@ -1,9 +1,6 @@
-import random
-num=random.randint(1,10)
-x=input("what do number do you want to choose")
-x=int(x)
-if (x==num):
-    print("get correct")
-else:
-      pritn("worng")
-      print("answer is num")
+import turtle
+n=int(input("請問你想畫幾邊形"))
+alex=turtle.Turtle()
+for i in range(n):
+    alex.forward(100)
+    alex.left(360/n)
